@@ -1,0 +1,26 @@
+.s-gears {
+    .image {
+        width: 60%;
+    }
+
+    .button {
+        display: block;
+        margin: 0 auto 50px;
+    }
+
+    .slick-slider {
+        & {
+            margin-bottom: 20px;
+        }
+
+        @include media($media__desktop) {
+            margin-bottom: 70px;
+        }
+    }
+
+    .content .title {
+        @include media($media__desktop) {
+            height: 78px;
+        }
+    }
+}

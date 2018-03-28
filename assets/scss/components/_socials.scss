@@ -1,0 +1,47 @@
+//
+//  Social icons and their output variations
+//  _____________________________________________
+
+$color-instagram: #c13584;
+$color-vk: #3b5998;
+$color-facebook: #45668e;
+
+.socials {
+    .item {
+        display: inline-block;
+        vertical-align: middle;
+        margin: 0 5px 10px;
+    }
+
+    .bordered-icon {
+        transition: opacity .2s ease;
+    }
+
+    .icon {
+        padding: 19px;
+    }
+
+    .instagram {
+        color: $color-instagram;
+    }
+
+    .facebook {
+        color: $color-vk;
+    }
+
+    .vk {
+        color: $color-facebook;
+    }
+}
+
+#{$noTouch} {
+    .socials {
+        .bordered-icon {
+            opacity: .8;
+        }
+
+        .bordered-icon:hover {
+            opacity: 1;
+        }
+    }
+}

@@ -1,0 +1,61 @@
+//
+//  Slick common styles
+//  _____________________________________________
+
+//  Dots
+.slick-dots {
+    & {
+        @extend %reset-list;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 10px 0 5px;
+    }
+
+    > li {
+        margin: 0 5px 5px;
+    }
+
+    button {
+        display: block;
+        width: 15px;
+        height: 15px;
+        font-size: 0;
+        border-radius: 50%;
+        border: 1px solid $color-white;
+        background: $color-1;
+        opacity: .7;
+        outline: none;
+        transition: opacity .2s ease-in-out;
+    }
+
+    .slick-active > button{
+        opacity: 1;
+    }
+}
+
+.__bg-color-1 {
+    .slick-dots button {
+        background: $color-2;
+    }
+}
+
+#{$noTouch} {
+    .slider-nav {
+        .slick-slide {
+            position: relative;
+        }
+
+        .slick-slide::before {
+            @extend %hidden;
+            @extend %overlay;
+            content: '';
+            z-index: 1;
+            background: rgba($color-white, .5);
+        }
+        .slick-current::before,
+        .slick-slide:hover::before {
+            @extend %visible;
+        }
+    }
+}

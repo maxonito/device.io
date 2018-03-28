@@ -1,0 +1,78 @@
+//
+//  Main app layout goes here
+//  _____________________________________________
+
+.page {
+    & {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        align-items: stretch;
+        overflow: hidden;
+        flex: 1 1 100%;
+        padding-top: 80px;
+    }
+}
+
+.cols {
+    & {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin-left: -10px;
+        margin-right: -10px;
+    }
+
+    > .col {
+        flex: 0 0 100%;
+        padding: 0 10px 35px;
+
+        @include media($media__tablet) {
+            padding-bottom: 0;
+        }
+    }
+
+    &.__equal-cols {
+        align-items: stretch;
+    }
+}
+
+.__cols-4 {
+    > .col {
+        & {
+            flex: 0 0 50%;
+        }
+
+        @include media($media__tablet) {
+            flex-basis: 25%;
+        }
+    }
+}
+
+.__cols-2 {
+    > .col {
+        @include media($media__tablet) {
+            flex-basis: 50%;
+        }
+    }
+}
+
+.page-overlay {
+    @extend %overlay;
+    @extend %hidden;
+    position: fixed;
+    background: $overlay__background;
+}
+
+.page-footer {
+    .title {
+        margin: 0;
+    }
+}
+
+.__show-overlay {
+    .page-overlay {
+        @extend %visible;
+    }
+}

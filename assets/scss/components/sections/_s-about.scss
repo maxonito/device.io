@@ -1,0 +1,55 @@
+.s-about {
+    & {
+        padding-top: 30px;
+    }
+
+    &::before {
+        content: '';
+        display: block;
+        border-top: 10px solid darken($color-2, 10%);
+        box-shadow: 0 0 1px 1px $color-2;
+    }
+
+    @include media($media__tablet) {
+        padding: 50px 40px;
+        background-position: top left;
+    }
+
+    @include media($media__desktop) {
+        padding: 50px 40px 400px;
+    }
+
+    > .content {
+        position: relative;
+        z-index: 1;
+        padding-bottom: 50px;
+    }
+
+    .box {
+        & {
+            padding-top: 0;
+            margin: 0 auto;
+        }
+
+        @include media($media__tablet) {
+            padding: 55px 30px 30px;
+            margin-left: 0;
+        }
+    }
+
+    .title {
+        @include media($media__tablet) {
+            position: absolute;
+            top: 0;
+            left: 50%;
+            width: 260px;
+            margin-left: -130px;
+        }
+    }
+
+    .text.__large {
+        margin-bottom: 0;
+        font-weight: 600;
+        font-size: 15px;
+    }
+}

@@ -1,0 +1,22 @@
+.s-steps {
+    .box {
+        & {
+            margin: 0 auto;
+            font-style: normal;
+        }
+
+        @include media($media__tablet) {
+            max-width: 100%;
+        }
+    }
+
+    .col {
+        @include media($media__tablet) {
+            margin-bottom: 20px;
+        }
+
+        @include media($media__desktop) {
+            margin-bottom: 50px;
+        }
+    }
+}

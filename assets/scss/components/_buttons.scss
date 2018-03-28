@@ -1,0 +1,66 @@
+$button__background: $color-1;
+$button__border-color: $color-2;
+$button__border: 2px solid $button__border-color;
+$button__color: $color-white;
+
+$button-secondary__background: $color-2;
+$button-secondary__color: $color-white;
+
+.button {
+    & {
+        display: inline-block;
+        min-width: 150px;
+        padding: 10px 20px;
+        outline: none;
+        box-shadow: 0 0 0 $color-white;
+        background: $button__background;
+        border-radius: 8px;
+        border: $button__border;
+        font-size: 16px;
+        font-family: 'Caveat', cursive;
+        text-align: center;
+        text-transform: uppercase;
+        color: $button__color;
+        cursor: pointer;
+        letter-spacing: 1.5px;
+        transition: all .2s ease-in-out;
+
+        @include media($media__desktop) {
+            min-width: 250px;
+            padding: 10px 30px;
+            font-size: 20px;
+            border-width: 4px 2px;
+        }
+    }
+
+    &.__inverted {
+        border-color: $color-1;
+        background: $color-2;
+    }
+
+    &.__secondary {
+        border-color: $button-secondary__color;
+        background: $button-secondary__background;
+    }
+}
+
+.link {
+    border: 0;
+    padding: 0;
+    background: transparent;
+    cursor: pointer;
+}
+
+#{$noTouch} {
+    .button {
+        &:hover {
+            background: darken($button__background, 5%);
+            border-color: darken($button__border-color, 5%);
+        }
+
+        &.__secondary:hover {
+            background: $button__background;
+            border-color: darken($button-secondary__background, 5%);
+        }
+    }
+}
