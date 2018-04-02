@@ -1,0 +1,1153 @@
+@import "fonts"
+@import "colors"
+
+// Базовые стили
+html
+	font-size: 10px
+body
+	padding: 0
+	margin: 0
+	font-size: 1.6rem
+	font-family: 'proxima-semi'
+	color: $white
+.btn
+	cursor: pointer
+	position: relative
+	left: 50%
+	transform: translateX(-50%)
+	display: inline-block
+	background-color: $red
+	padding: 1rem 2.6rem
+	border: none
+	color: $white
+	font-family: 'sf-semi'
+	font-size: 1.5rem
+	transition: all 0.2s
+	&:hover
+		background-color: darken($red, 5%)
+.caption
+	width: 100%
+	text-align: center
+	text-transform: uppercase
+.red-line
+	display: block
+	width: 10rem
+	height: 5px
+	background-color: $red
+	margin: auto
+// Форма
+.form
+	button
+		width: 80%
+		padding: 1.5rem
+		border-radius: 5px
+	input
+		display: block
+		margin: auto
+		margin-bottom: 1rem
+		width: 80%
+		color: $black
+		background-color: #fff
+		border: #a2a2a2 1px solid
+		border-radius: 5px
+		padding: 1.5rem 2rem
+		font-family: 'sf-light'
+	textarea
+		display: block
+		margin: auto
+		margin-bottom: 1rem
+		width: 80%
+		color: #c4c1c1
+		background-color: #fff
+		border: #a2a2a2 1px solid
+		border-radius: 5px
+		padding: 1.5rem 2rem
+		font-family: 'sf-light'
+		color: $black
+	&-caption
+		font-size: 2.2rem
+		font-family: 'proxima-bold'
+		text-align: center
+		margin-bottom: 2.6rem
+	&-wrap
+		width: 100%
+		padding: 4rem 4.3rem
+		background-color: rgba(128,49,52, 0.8)
+.p-null
+	padding-left: 0
+	padding-right: 0
+	margin-top: 3rem
+.null
+	padding-left: 0
+	padding-right: 0
+// Основные стили
+// Главная
+.main
+	background: #292929 url(../img/main-bg.jpg) center no-repeat
+	background-size: cover
+	// Хедер
+	.header
+		padding-bottom: 1rem
+		
+		margin-bottom: 1rem
+		border-bottom: 1px solid #bbbbbb
+
+		&-logo
+			margin-top: 1.2rem
+			position: relative
+			display: inline-block
+			width: 100%
+			height: 6.4rem
+			img
+				float: left
+				display: inline-block
+				height: 95%
+			div
+				position: absolute
+				top: 0rem
+				left: 4rem
+				margin-left: 1rem
+				display: inline-block
+				color: $white
+				text-transform: uppercase
+				font-size: 2.6rem
+				font-family: 'gothic'
+				color: $red
+			span
+				position: absolute
+				top: 3.2rem
+				left: 1.6rem
+				display: inline-block
+				position: relative
+				font-size: 2.4rem
+				margin-right: 1rem
+		&-menu
+			list-style: none
+			padding-left: 0
+			text-align: center
+			li
+				display: inline-block
+				a
+					font-size: 1.7rem
+					font-family: 'sf-medium'
+					margin-right: 2.6rem
+					color: $white
+					text-decoration: none
+					transition: all 0.2s
+					&:hover
+						color: $red
+						border-bottom: 2px solid $red
+		&-number
+			width: 100%
+			text-align: center
+			font-size: 3rem
+			font-family: 'open'
+			margin-bottom: 0.7rem
+	
+
+	&-caption
+		font-size: 5.3rem
+		font-family: 'proxima-bold'
+		line-height: 1.1
+		margin-bottom: 3rem
+		span
+			position: relative
+			font-size: 4.5rem
+			right: 9px
+	&-sub
+		display: block
+		margin: auto
+		margin-top: 3rem
+		margin-bottom: 4rem
+		width: 89%
+		font-size: 2.5rem
+	&-block
+		position: relative
+		left: 4rem
+		height: 7rem
+		span
+			display: inline-block
+			position: relative
+			height: 3.4rem
+			width: 3.4rem
+			left: -1rem
+			margin: 1.8rem 0
+			padding-top: 7px
+			text-align: center
+			background: url(../img/red-romd.png) center no-repeat
+			background-size: cover
+		&-text
+			display: inline-block
+			position: relative
+			top: 50%
+			transform: translateY(-50%)
+			width: 85%
+			font-size: 1.7rem
+			font-family: 'sf-regular'
+		.block-1
+			positio: auto
+			line-height: 7rem
+	&-scrolldown
+		display: inline-block
+		position: relative
+		left: 49%
+		margin-bottom: 2rem
+		animation: swipe 3s ease-in-out 3s infinite
+
+// Сервисы
+.services
+	padding-top: 5.6rem
+	&-block
+		position: relative
+		margin-bottom: 3rem
+		width: 100%
+		height: 39rem
+		border: 2px solid $red
+
+		&-img
+			position: absolute
+			bottom: 8rem
+			left: 50%
+			transform: translateX(-50%)
+			width: 80%
+			margin: auto
+			display: block
+		&-apple
+			width: 93%
+			bottom: 9rem
+		&-phone
+			width: 90%
+			bottom: 9rem
+		&-photo
+			width: 72%
+		&-title
+			display: inline-block
+			background-color: $red
+			text-transform: uppercase
+			font-size: 1.6rem
+			padding: 0.7rem
+			margin-top: 3.5rem
+			font-family: 'sf-semi'
+			word-break: keep-all
+		&-btn
+			position: absolute
+			bottom: 0
+			margin-top: 3rem
+			margin-bottom: 2rem
+			padding: 1.4rem
+			width: 70%
+			font-family: 'sf-medium'
+			text-decoration: none
+			text-align: center
+	&-sub
+		font-size: 2.2rem
+		color: $black
+		text-align: center
+	&-caption
+		color: $black
+		font-family: 'proxima-bold'
+		font-size: 3.5rem
+
+// Не нашли категорию товара
+.search
+	background:  url(../img/search-bg.jpg) center no-repeat
+	background-size: cover
+	padding-top: 3rem
+	padding-bottom: 2rem
+	&-sub
+		font-size: 2.2rem
+		text-align: center
+		font-family: 'sf-light'
+		margin-top: 1rem
+	&-caption
+		font-size: 3.5rem
+		font-family: 'proxima-bold'
+		margin-bottom: 1rem
+	&-form-wrap
+		background-color: transparent
+		padding-top: 2rem
+		button
+			font-size: 1.5rem
+			font-family: 'sf-medium'
+
+// 8 причин доверять нам
+.confidence
+	padding-top: 2rem
+	padding-bottom: 3rem
+	&-block
+		width: 100%
+		margin-top: 5.3rem
+		text-align: center
+		img
+			display: inline-block
+		span
+			display: inline-block
+			color: $black
+			font-size: 1.8rem
+			margin-top: 3rem
+			font-family: 'sf-medium'
+	.caption
+		color: $black
+		font-size: 3rem
+		font-family: 'proxima-bold'
+
+// Узнайте какая стоимость и срок ремонта вашего девайса
+.cost
+	position: relative
+	background:  url(../img/cost-bg.jpg) center no-repeat
+	background-size: cover
+	padding-top: 4rem
+	padding-bottom: 3rem
+	&-girl
+		position: absolute
+		bottom: 0
+		height: 80%
+		z-index: 10
+	&-caption
+		font-size: 3rem
+		font-family: 'proxima-bold'
+	.form-wrap
+		margin-top: 3rem
+		width: 100%
+		.form-caption
+			font-size: 2.5rem
+			text-transform: uppercase
+		.form
+			width: 70%
+			margin: auto
+
+// 4 шага к исправности вашего девайса
+.steps
+	padding-bottom: 4rem
+	&-caption
+		color: $black
+		font-family: 'proxima-bold'
+		font-size: 3.5rem
+		margin-top: 5rem
+
+	&-block
+		position: relative
+		height: 10rem
+		div
+			display: inline-block
+			position: absolute
+			top: 50%
+			transform: translateY(-50%)
+			width: 7.5rem
+			height: 7.5rem
+			padding-top: 1.3rem
+			text-align: center
+			background: #fff url(../img/red-romb-1.png) center no-repeat
+			background-size: cover
+			font-size: 4rem
+		span
+			display: inline-block
+			position: absolute
+			top: 48%
+			left: 8rem
+			transform: translateY(-50%)
+			color: $black
+			width: 70%
+			margin-left: 0.4rem
+			font-size: 1.5rem
+	&-delivery
+		display: flex
+		margin-top: 5rem
+		span
+			display: inline-block
+			margin-left: 2rem
+			color: $black
+			font-size: 1.6rem
+			font-family: 'sf-semi'
+
+// Рубрика вопрос ответ
+.question
+	background:  url(../img/question-bg.jpg) 75% no-repeat
+	background-size: cover
+	padding-bottom: 4rem
+	&-caption
+		font-size: 3rem
+		font-family: 'proxima-bold'
+		margin-top: 5rem
+	&-block
+		margin-top: 4rem
+		width: 100%
+		&-text
+			position: relative
+			left: 13px
+			width: 75%
+			padding: 2rem
+			margin: auto
+			display: block
+			background-color: rgba(255, 255, 255, 0.7)
+			color: $black
+			font-size: 1.4rem
+			font-family: 'sf-regular'
+			display: none
+			&_active
+				display: block
+		&-btn
+			text-align: left
+			position: relative
+			display: block
+			padding: 1.6rem 3rem
+			text-transform: uppercase
+			font-size: 1.6rem
+			border: none
+			background-color: rgba(117,37,43, 0.8)
+			color: $white
+			width: 80%
+			margin: auto
+			margin-top: 0.5rem
+			font-family: 'sf-semi'
+			transition: all 1s
+			&:focus
+				outline: none
+				&:before
+					display: block
+					position: absolute
+					left: -1rem
+					content: ''
+					width: 2rem
+					height: 2rem
+					background-color: #fff
+					transform: rotate(45deg)
+			&_active
+				&:before
+					display: block
+					position: absolute
+					left: -1rem
+					content: ''
+					width: 2rem
+					height: 2rem
+					background-color: #fff
+					transform: rotate(45deg)
+
+// Благодарности клиентов
+.thanks
+	padding: 4rem 0
+	&-caption
+		color: $black
+		font-size: 3.5rem
+		font-family: 'proxima-bold'
+	.fotorama-wrap
+		width: 100%
+	.fotorama
+		&-img
+			position: absolute
+			left: 10rem
+			top: 10%
+			float: left
+			display: block
+			width: 20rem
+			height: 20rem
+			border-radius: 50%
+			overflow: hidden
+			&-1
+				background: #fff url(../img/andreychenko.jpg) center no-repeat
+				background-size: cover
+			&-2
+				background: #fff url(../img/rabcun.jpg) center no-repeat
+				background-size: cover
+			&-3
+				background: #fff url(../img/gubkin.jpg) center no-repeat
+				background-size: cover
+			&-4
+				background: #fff url(../img/serdukov.jpg) center no-repeat
+				background-size: cover
+			&-5
+				background: #fff url(../img/olejnik.jpg) center no-repeat
+				background-size: cover
+			&-6
+				background: #fff url(../img/babrov.jpg) center no-repeat
+				background-size: cover
+				background-position: top
+			&-7
+				background: #fff url(../img/kostuchenko.jpg) center no-repeat
+				background-size: cover
+		&-text
+			position: relative
+			float: right
+			display: inline-block
+			width: 65%
+			margin-top: 4%
+			color: $black
+			font-family: 'sf-regular'
+			box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.1)
+			padding: 3rem 5rem
+			z-index: 3
+
+			&::before
+				display: inline-block
+				position: absolute
+				z-index: 1
+				left: -1.5rem
+				top: 20%
+				content: ''
+				width: 3rem
+				height: 3rem
+				background-color: $white
+				transform: rotate(-45deg)
+				box-shadow: -5px -5px 10px 0px rgba(0, 0, 0, 0.1)
+				
+			&-name
+				display: block
+				margin-bottom: 4rem
+				color: $black
+				font-size: 1.8rem
+				font-family: 'sf-semi'
+
+// Запишитесь на ремонт
+.write
+	background:  url(../img/write-bg.jpg) center no-repeat
+	background-size: cover
+	padding: 4rem 0
+	.container
+		padding-bottom: 2rem
+		position: relative
+		background-color: rgba(213, 56, 62, 0.7)
+	&-girl
+		position: absolute
+		bottom: 0
+		left: 40%
+	&-sub
+		font-size: 2rem
+		margin-top: 6rem
+		margin-bottom: 5rem
+		text-align: center
+		text-transform: uppercase
+		font-family: 'proxima-bold'
+	&-subtitle
+		font-size: 2.4rem
+		font-family: 'sf-semi'
+	&-text
+		display: inline-block
+		position: relative
+		height: auto
+		padding-left: 3rem
+		margin-bottom: 2rem
+		width: 92%
+		&:before
+			position: absolute
+			left: 0
+			top: 30%
+			display: inline-block
+			content: ''
+			width: 2rem
+			height: 2rem
+			margin-right: 1rem
+			margin-bottom: 1rem
+			transform: rotate(-45deg)
+			background-color: rgba(255, 255, 255, 0.7)
+	.form-wrap
+		background-color: transparent
+		padding-right: 2rem
+		padding-bottom: 0
+		padding-top: 0rem
+		.form-caption
+			font-size: 1.7rem
+
+// Контакты
+.contact
+	padding: 4rem 0
+
+	&-tel
+		font-size: 2rem
+		font-family: 'sf-bold'
+		color: $black
+		margin-top: 1rem
+		margin-bottom: 1rem
+		&:before
+			display: inline-block
+			content: ''
+			width: 2rem
+			height: 1.8rem
+			position: relative
+			top: 4px
+			background: #fff url(../img/telephone.png) center no-repeat
+			margin-right: 0.6rem
+	&-tel-2
+		&:before
+			background: #fff url(../img/viber.png) center no-repeat
+			background-size: cover
+		&-cap
+			display: block
+			font-size: 1.5rem
+			color: #757575
+			font-family: 'sf-light'
+			margin-top: 1rem
+	&-email
+		font-size: 2rem
+		font-family: 'sf-bold'
+		color: $black
+		margin-top: 1rem
+		margin-bottom: 3rem
+		&:before
+			display: inline-block
+			content: ''
+			width: 2rem
+			height: 1.8rem
+			position: relative
+			top: 4px
+			background: #fff url(../img/message.png) center no-repeat
+			margin-right: 0.6rem
+		&-cap
+			display: block
+			font-size: 1.5rem
+			color: #757575
+			font-family: 'sf-light'
+			margin-top: 3rem
+	&-adress
+		font-size: 2rem
+		font-family: 'sf-bold'
+		color: $black
+		margin-top: 1rem
+		margin-bottom: 3rem
+		p
+			font-size: 1.5rem
+			font-family: 'sf-medium'
+		&:before
+			display: inline-block
+			content: ''
+			width: 2rem
+			height: 2rem
+			position: relative
+			top: 4px
+			background: #fff url(../img/maps-and-flags.png) center no-repeat
+			margin-right: 0.6rem
+		&-cap
+			display: block
+			font-size: 1.5rem
+			color: #757575
+			font-family: 'sf-light'
+			margin-top: 1rem
+
+	.red-line
+		margin-left: 4.6rem
+	&-caption
+		text-align: left
+		color: $black
+		font-size: 3.5rem
+		font-family: 'proxima-bold'
+		margin-bottom: 2rem
+
+	&-map
+		position: absolute
+		top: 50%
+		transform: translateY(-50%)
+		width: 95%
+		height: 65rem
+	&-fasad
+		cursor: pointer
+		width: 50%
+	&-work
+		font-size: 2rem
+		font-family: 'sf-bold'
+		color: $black
+		margin-top: 1rem
+
+// Футер
+.footer
+	background-color: #292929
+	padding: 0.5rem 0
+	&-copyright
+		text-align: right
+		font-family: 'sf-light'
+	&-maker
+		width: 100%
+		color: $red
+		text-decoration: none
+	&-logo
+			position: relative
+			display: inline-block
+			width: 100%
+			height: 6rem
+			img
+				float: left
+				display: inline-block
+				height: 100%
+			div
+				position: absolute
+				top: 0rem
+				left: 4rem
+				margin-left: 1rem
+				display: inline-block
+				color: $white
+				text-transform: uppercase
+				font-size: 2.6rem
+				font-family: 'gothic'
+				color: $red
+			span
+				position: absolute
+				top: 3rem
+				left: 1.6rem
+				display: inline-block
+				position: relative
+				font-size: 2.4rem
+				margin-right: 1rem
+
+// Доп страницы!!!!!!!!!!!!!
+// Страница услуг Apple
+// 
+.apple
+	color: $black
+	font-family: 'sf-regular'
+	background: none
+	&-img
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		width: 95%
+		&-1
+			width: 100%
+	b
+		display: block
+		font-family: 'sf-bold'
+		margin-top: 2rem
+	&-list
+		list-style: none
+		margin-left: 0
+		padding-left: 0
+		li
+			display: block
+			font-size: 1.4rem
+			margin-bottom: 0.6rem
+			&:before
+				display: inline-block
+				content: ''
+				width: 1rem
+				height: 1rem
+				margin-right: 2rem
+				background-color: $red
+				transform: rotate(-45deg)
+	&-caption
+		color: $black
+		font-size: 3.5rem
+		font-family: 'proxima-bold'
+	&-sub
+		display: block
+		width: 95%
+		margin: auto
+		margin-top: 3rem
+		font-size: 2rem
+		color: $black
+		text-align: center
+		font-family: 'sf-regular'
+		margin-bottom: 4rem
+		b
+			display: inline
+			font-family: 'sf-bold'
+	&-link
+		display: inline-block
+		text-decoration: none
+		color: $black
+		margin-top: 2rem
+		margin-right: 1rem
+		&_active
+			display: inline-block
+			color: $red
+			border-left: 2px solid $red
+			padding-left: 1rem
+	.header
+		background-color: #2f2f2f
+		background: none
+// Страница услуг для телефонов
+.phone-img
+	display: block
+	width: 100%
+	margin: auto
+	margin-bottom: 3rem
+// Страница услуг для планшетов
+.tablet-img
+	display: block
+	width: 90%
+	margin: auto
+	margin-bottom: 3rem
+// Попап
+.popup
+	&-wrapper
+		position: fixed
+		top: 0
+		display: none
+		z-index: 10
+		width: 100vw
+		height: 100vh
+		background-color: rgba(0,0,0, 0.7)
+		.form-wrap
+			position: absolute
+			top: 50%
+			left: 50%
+			transform: translate(-50%,-50%)
+			max-width: 55rem
+			background-color: #fff
+			border-radius: 5px
+			border: 3px solid $red
+			.form-caption
+				color: $black
+			.exit
+				color: $black
+				font-size: 4.4rem
+				position: absolute
+				right: 0.7rem
+				top: -0.7rem
+				cursor: pointer
+// Страница ремонта другой цифровой техники
+.why
+	padding: 3rem 0
+	text-align: left
+	b
+		display: block
+		font-size: 1.6rem
+		color: $black
+		font-family: 'sf-bold'
+		padding: 1rem 0
+	span
+		color: $black
+		font-family: 'sf-regular'
+	&-caption
+		color: $red
+		font-size: 2.2rem
+		text-transform: uppercase
+// Страница благодарности
+.contain
+	position: relative
+	width: 100vw
+	height: 100vh
+	background:  url(../img/question-bg.jpg) center no-repeat
+	background-size: cover
+	.message
+		text-align: center
+		color: #554c4c
+		font-size: 2rem
+		font-family: 'sf-semi'
+		border-radius: 5px
+		padding: 3rem
+		min-width: 30rem	
+		border: 3px solid $red
+		background-color: #fff
+		position: absolute
+		top: 50%
+		left: 50%
+		transform: translate(-50%,-50%)
+	.copyright
+		position: absolute
+		bottom: 0
+		left: 50%
+		transform: translateX(-50%)
+// Большое фото фасада
+.fasad-wrap
+	display: none
+	position: fixed
+	bottom: 0
+	width: 100vw
+	height: 100vh
+	background-color: rgba(0,0,0, 0.6)
+	.fasad-img
+		display: block
+		position: absolute
+		left: 50%
+		top: 50%
+		transform: translate(-50%, -50%)
+		width: 90%
+		max-width: 60rem
+
+// Анимация кнопки на главном экране
+@keyframes swipe
+	0% 
+		transform: translateY(0)
+	50% 
+		transform: translateY(50%)
+	100% 
+		transform: translateY(0)
+// Медиазапросы
+@media (max-width: 1200px)
+	.main
+		&-sub
+			width: 100%
+		&-caption
+			font-size: 4.7rem
+			span
+				font-size: 4rem
+		&-block
+			left: 0
+			&-text
+				width: 81%
+		.header
+			&-menu
+				li
+					a
+						margin-right: 1rem
+	.services
+		&-block
+			height: 37rem
+			&-title
+				font-size: 1.3rem	
+	.confidence-block
+		span
+			width: 100%
+			margin-top: 1rem
+	.cost-girl
+		margin-left: -5rem
+	.steps-delivery
+		height: 4.4rem
+
+	// Доп страницы!!!!!!!!!
+	.apple
+		&-list
+			li
+				&:before
+					margin-right: 1rem
+	.write-text
+		width: 100%
+	.services-block
+		height: 35rem
+		&-apple
+			height: 17rem
+@media (max-width: 992px)
+	.main
+		.form-wrap
+			margin-top: 4rem
+			margin-bottom: 2rem
+		
+		&-block
+			&-text
+				width: 70%
+		&-sub
+			text-align: center
+			width: 90%
+		.header
+			&-logo
+				display: block
+				margin: auto
+				margin-top: 1rem
+				width: 26.5rem
+			&-menu
+				margin: auto
+				margin-top: 2rem
+				margin-bottom: 2rem
+				li
+					a
+						margin-right: 3rem
+						font-size: 2.2rem
+	.cost-girl
+		display: none
+	.cost
+		.form-wrap
+			.form
+				width: 100%
+	.write
+		&-text
+			position: relative
+			top: 50%
+			transform: translateY(-50%)
+			margin-left: 3rem
+		&-girl
+			display: none
+	.apple-img
+		display: block
+		margin-bottom: 3rem
+	.services-block
+		height: 37rem
+	.services-block-phone
+		width: 95%
+		bottom: 8.4rem
+	.services-block-tablet
+		width: 75%
+	.services-block-apple
+		height: 18rem
+	.thanks
+		.fotorama-img
+			position: relative
+			left: 0
+			top: 0
+@media (max-width: 768px)
+	.main
+		.header
+			&-menu
+				li
+					a
+						margin-right: 1.4rem
+	.services
+		&-block
+			height: 32rem
+			&-title
+				&-phone
+					width: 70%
+				&-comps
+					width: 70%	
+	.thanks
+		.fotorama
+			&-img
+				margin: auto
+				float: none
+				width: 12rem
+				height: 12rem
+				margin-top: 1rem
+			&-text
+				float: none
+				margin-top: 1rem
+				width: 100%
+				height: auto
+				font-size: 1.4rem
+				&-name
+					margin-bottom: 1rem
+	.contact-map
+		width: 100%
+		height: 40rem
+		margin-top: 1rem
+	.search-form-wrap
+		width: 100%
+
+	.footer
+		&-logo
+			display: block
+			width: 27rem
+			margin: auto
+		&-maker
+			display: inline-block
+			text-align: center
+		&-copyright
+			text-align: center
+	.write
+		&-text
+			position: relative
+			width: auto
+			&:before
+				top: 50%
+				transform: rotate(-45deg) translateY(-50%)
+	.contact
+		&-caption
+			text-align: center
+		.red-line
+			margin: auto
+		&-tel
+			text-align: center
+			margin-top: 0rem
+		&-email
+			text-align: center
+			&-cap
+				text-align: center
+		&-adress
+			text-align: center
+			&-cap
+				text-align: center
+		&-fasad
+			display: block
+			margin: auto
+		&-work
+			width: 100%
+			display: block
+			text-align: center
+		&-map
+			position: relative
+			width: 100%
+	.footer
+		padding-top: 1.4rem
+	.services-block-apple
+		height: 14rem
+		width: 95%
+@media (max-width: 576px)
+	.main
+		.form-wrap
+			padding: 1rem
+		.header
+			&-logo
+				display: block
+			&-menu
+				position: relative
+				left: 1rem
+				margin: auto
+				margin-top: 1rem
+				margin-bottom: 1rem
+				li
+					a
+						display: block
+						margin: 0 1rem
+						margin-left: 1rem
+						text-align: center
+						font-size: 2.2rem
+		&-block
+			position: relative
+			height: 8rem
+			text-align: center
+
+			span
+				position: absolute
+				top: -3.4rem	
+				left: 50%
+				transform: translateX(-50%)
+			&-text
+				position: relative
+				width: 80%
+		&-caption
+			font-size: 3.2rem
+			span
+				font-size: 2.7rem
+				right: 5px
+	.services-block
+		height: 36rem
+		width: 28rem
+		margin: auto
+		margin-bottom: 3rem
+		&-img
+			width: 87%
+		&-phone
+			width: 93%
+			bottom: 9rem
+		&-apple
+			width: 95%
+			height: 16rem
+			bottom: 10rem
+		&-photo
+			width: 80%
+			bottom: 9rem
+		&-btn
+				width: 80%
+		&-title
+			font-size: 1.3rem
+			&-phone
+				width: auto
+			&-comps
+				width: auto
+
+	.search
+		.form-wrap
+			padding: 1rem
+	.form-wrap
+		padding: 1rem
+
+	.question-block-text
+		width: 95%
+		left: 0
+	.question-block-btn
+		font-size: 1.3rem
+		width: 100%
+		padding-left: 1rem
+		padding-right: 0.5rem
+	.services-block-tablet
+		width: 80%
+@media (max-width: 450px)
+	.thanks
+		.fotorama
+
+			&-img
+				display: none 
+	.contain
+		.message
+			padding: 1.6rem
+	.main
+		.header
+			&-menu
+				left: 0
+				li
+					a
+						margin: 0 1rem
+						margin-left: 0.8rem
+	.services-block
+		&-apple
+			
+	.apple-link_active
+		font-size: 1.4rem
+
